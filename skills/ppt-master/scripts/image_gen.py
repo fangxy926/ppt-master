@@ -60,6 +60,7 @@ IMAGE_ENV_PREFIXES = (
     "IMAGE_",
     "GEMINI_",
     "OPENAI_",
+    "LABNANA_",
     "MINIMAX_",
     "STABILITY_",
     "BFL_",
@@ -108,6 +109,14 @@ BACKEND_REGISTRY = {
         "default_model": "gpt-image-2",
         "key_hint": "OPENAI_API_KEY",
         "aliases": ["openai-compatible", "openai_compatible"],
+    },
+    "labnana": {
+        "module": "backend_labnana",
+        "tier": "core",
+        "label": "Labnana gateway (Gemini-shaped responses)",
+        "default_model": "gpt-image-2",
+        "key_hint": "LABNANA_API_KEY",
+        "aliases": ["lab-nana", "lab_nana"],
     },
     "minimax": {
         "module": "backend_minimax",
